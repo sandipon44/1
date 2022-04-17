@@ -54,7 +54,7 @@ function copyText(htmlElement) {
   document.querySelector("#btn1").onclick =
     function (e) {
         e.preventDefault()
-        copyText(document.querySelector("#final_color"));
+        copyText(document.querySelector("#hi"));
         document.querySelector("#btn1").innerHTML="copied";
     }
   
