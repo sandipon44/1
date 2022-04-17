@@ -7,6 +7,7 @@ var final_color=document.querySelector("#final_color");
 var select=document.querySelector("#select");
 var body=document.querySelector("body");
 var sss=document.querySelector(".sss");
+var hi=document.querySelector("#hi");
 
 
 
@@ -18,9 +19,11 @@ select.addEventListener("input",color);
 
 function color() {
     display.style.background ="linear-gradient("+  select.value +   "," + first_color.value + ", " + second_color.value + ")";
+   
+    hi.innerHTML="background: " + display.style.background;
     input.style.background ="linear-gradient("+  select.value +   "," + first_color.value + ", " + second_color.value + ")";
     sss.style.background ="linear-gradient("+  select.value +   "," + first_color.value + ", " + second_color.value + ")";
-    final_color.innerText = "background:" + display.style.background + ";";
+    
 };
 
 
